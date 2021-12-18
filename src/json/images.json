@@ -1,0 +1,25 @@
+[
+    {
+        "picture": "unicorn",
+        "fileType": "jpg"
+    },
+    {   "picture": "words-game",
+        "fileType": "jpg"
+    },
+    {   "picture": "weather-app",
+        "fileType": "jpg"
+    },
+    {   "picture": "form",
+        "fileType": "png"
+    },
+    {   "picture": "architect-website",
+        "fileType": "png"
+    },
+    {   "picture": "mybrary",
+        "fileType": "jpg"
+    },
+    {   "picture": "winter-triathlon",
+        "fileType": "jpg"
+    }
+
+]
