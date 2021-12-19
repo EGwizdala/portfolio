@@ -3,6 +3,7 @@ import Header from '../pages/Header';
 import AboutMe from '../pages/AboutMe';
 import MySkills from '../pages/MySkills';
 import MyWork from '../pages/MyWork';
+import ContactMe from '../pages/ContactMe'
 
 
 function Main() {
@@ -12,6 +13,7 @@ function Main() {
             <AboutMe />
             <MySkills />
             <MyWork />
+            <ContactMe />
         </main>
     )
 }

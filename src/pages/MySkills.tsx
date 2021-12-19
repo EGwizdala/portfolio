@@ -1,9 +1,10 @@
 import React from 'react';
 import { ReactComponent as SVGHtml } from '../svg/html.svg';
-import { ReactComponent as SVGCss } from '../svg/css.svg'
-import { ReactComponent as SVGJavaScript } from '../svg/javascript.svg'
-import {ReactComponent as SVGReact} from '../svg/react.svg'
-import { couldStartTrivia } from 'typescript';
+import { ReactComponent as SVGCss } from '../svg/css.svg';
+import { ReactComponent as SVGJavaScript } from '../svg/javascript.svg';
+import { ReactComponent as SVGReact } from '../svg/react.svg';
+
+
 
 
 function MySkills() {
@@ -18,7 +19,7 @@ function MySkills() {
     })
     
     return (
-        <div>
+        <section>
             <h2>/ About my skills</h2>
             <h4>Technologies I work with:</h4>
             <div>
@@ -33,9 +34,7 @@ function MySkills() {
             </div>
             <h4>I also use:</h4>
             <ul>{technologiesDisplay}</ul>
-            
-
-        </div>
+        </section>
     )
 }
 

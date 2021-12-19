@@ -1,25 +1,32 @@
 [
     {
         "picture": "unicorn",
-        "fileType": "jpg"
+        "fileType": "jpg",
+        "alt": "travelers blog website"
     },
     {   "picture": "words-game",
-        "fileType": "jpg"
+        "fileType": "jpg",
+        "alt": "game for kids"
     },
     {   "picture": "weather-app",
-        "fileType": "jpg"
+        "fileType": "jpg",
+        "alt": "weather forecast app"
     },
     {   "picture": "form",
-        "fileType": "png"
+        "fileType": "png",
+        "alt": "travelers blog website"
     },
     {   "picture": "architect-website",
-        "fileType": "png"
+        "fileType": "png",
+        "alt": "website of architectural studio"
     },
     {   "picture": "mybrary",
-        "fileType": "jpg"
+        "fileType": "jpg",
+        "alt": "book online library"
     },
     {   "picture": "winter-triathlon",
-        "fileType": "jpg"
+        "fileType": "png",
+        "alt": "winter triathlon website"
     }
 
 ]
