@@ -1,0 +1,20 @@
+
+@import "_variables"
+@import "_mixins"
+
+
+.btn-icon
+    
+    +flex-parent
+    & > *
+        +flex
+    svg 
+        height: 30px
+        width: 30px
+        fill: $dark-gray
+  
+    span
+        padding: map-get($padding, nav-element)
+
+
+    

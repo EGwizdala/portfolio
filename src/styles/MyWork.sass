@@ -1,0 +1,35 @@
+@import "_variables"
+@import "_mixins"
+
+
+.section--myWork
+    +flex-parent
+    &__header
+        +flex(1,0,100%)
+        +header
+    &__text
+        +flex(1,0,100%)
+        +text
+        position: relative
+        &::before
+            +text-background
+        
+    &__group
+        +flex-parent
+        width: 100%
+        icon
+            +flex(1, 0, 25%)
+            height: map-get($icon-size, bigSize)
+            width: map-get($icon-size, bigSize)
+            align-self: flex-end
+        p
+            +flex(1, 0, 25%)
+            font-size: $text-secondary-size
+    
+
+   
+
+            
+
+
+        

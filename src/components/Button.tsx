@@ -1,7 +1,7 @@
 import { ReactComponent as DoneSVG } from '../svg/done.svg';
 
 interface ButtonProps {
-    buttonSubmit: (e: any) => void;
+    buttonSubmit: any;
 }
 
 const Button = (props:ButtonProps) => {

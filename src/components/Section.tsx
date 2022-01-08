@@ -1,17 +1,23 @@
 import React from 'react';
 
 interface SectionProps {
-    icon: JSX.Element;
+    icon: React.ReactNode;
     text: string;
+    classNameIcon: string;
 }
 
 function Section(props: SectionProps) {
     return (
-        <div>
-            {props.icon}
-            <div>{props.text}</div>
-        </div>
+        <>
+            <div className = {props.classNameIcon}>{props.icon}</div>
+            <p>{props.text}</p>
+        </>
     )
 }
 
 export default Section;
+
+
+//const Section: React.FC<SectionProps> = () => {...}
+
+/// icon zamiast JSX.element == ReactNode

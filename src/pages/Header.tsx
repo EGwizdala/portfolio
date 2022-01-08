@@ -1,16 +1,26 @@
 import React from 'react';
-import {ReactComponent as SVGHeart} from '../svg/heart.svg'
+import { ReactComponent as SVGHeart } from '../svg/heart.svg'
+import Canvas from '../components/Canvas'
 
 
 function Header() {
-
+    
     return (
         <header>
-            <canvas id="myCanvas" width={200} height={100}></canvas>
-            <h1>Hello World !</h1>
-            <h2>I'm Emilia and I <SVGHeart /> to code</h2>
+            {<Canvas />}
         </header>
     )
 }
 
 export default Header
+
+
+
+//class A e C{
+//inputRef = null;
+//render(
+//return (
+//  <input ref={inputRef} />/
+//)
+//)
+//}

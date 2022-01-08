@@ -4,6 +4,7 @@ import Name from '../components/Name';
 import Message from '../components/Message';
 import Button from '../components/Button'
 
+
 interface ContactFormProps {
 
 }
@@ -13,6 +14,13 @@ interface ContactFormState{
     message: string;
 }
 
+interface FormElements extends HTMLFormControlsCollection {
+    usernameInput: HTMLInputElement
+  }
+interface UsernameFormElement extends HTMLFormElement {
+    readonly elements: FormElements
+}
+
 class ContactForm extends Component {
         state: ContactFormState = {
             email: "sss",
@@ -20,19 +28,20 @@ class ContactForm extends Component {
             message: "sss"
         }
 
-    hendleChange = (e: any) => {
-        const value = e.target.value;
-        const name = e.target.name;
-        console.log(value)
+    handleOnChange = (e: React.FormEvent<EventTarget>): void => {
+        const event = e.target as HTMLInputElement;
+        const value = event.value;
+        const name = event.name;
         this.setState({
             [name]: value,
         })
-        console.log(value)
+       
     }
 
-    handleSubmit = (e: any) => {
+    handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         console.log(e)
         e.preventDefault();
+        const form = e.currentTarget;
         console.log("submit");
         this.setState({
             email: "",
@@ -44,9 +53,9 @@ class ContactForm extends Component {
     render() {
         return (
             <form>
-                <Email email={this.state.email} change={this.hendleChange}/>
-                <Name name={this.state.name} change={this.hendleChange}/>
-                <Message message={this.state.message} change={this.hendleChange}/>
+                <Email email={this.state.email} change={this.handleOnChange}/>
+                <Name name={this.state.name} onChange={this.handleOnChange}/>
+                <Message message={this.state.message} onChange={this.handleOnChange}/>
                 <Button buttonSubmit={this.handleSubmit}/>
             </form>
         )

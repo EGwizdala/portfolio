@@ -1,0 +1,55 @@
+@import "_mixins"
+@import "_variables"
+    
+.Nav
+    +flex-parent
+    height: 70px
+    text-transform: uppercase
+    .Nav_element
+        height: inherit
+        font-size: 1rem
+        color: $dark-gray
+        +flex(1,0,auto)
+        +flex-parent(flex, row, no-wrap, flex-end, center, 0, 0)
+
+.btn-dark-mode
+    background-color: $dark-gray
+    height: 25px
+    width: auto
+    padding: map-get($padding, nav-element)
+    border-radius: 9px
+    color: $white
+
+.text-dark-mode
+    padding: map-get($padding, nav-element)
+       
+.menu 
+    width: 60%
+    align-self: flex-end
+    > *
+        padding: map-get($padding, nav-element)
+        border-right: 1.5px solid 
+        &:last-child, &:first-child
+            border-right: none
+
+.menu__button
+    letter-spacing: 0.15em
+    position: relative
+    &::after
+        bottom: 0
+        content: ""
+        display: block
+        height: 1px
+        left: 50%
+        position: absolute
+        background: $dark-gray
+        transition: width 0.3s ease 0s, left 0.3s ease 0s
+        width: 0
+    &:hover::after
+        width: 100%
+        left: 0
+
+
+
+
+

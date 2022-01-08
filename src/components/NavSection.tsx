@@ -1,14 +1,20 @@
+import { getAllByDisplayValue } from '@testing-library/dom'
 import React from 'react'
 
-function NavSection() {
+interface NavSectionProps {
+    className: string
+}
+
+function NavSection(props: NavSectionProps) {
+    const menu__button = "menu__button"
     return (
-        <div>
+        <div className={`${props.className} menu`}>
             <span>
-                About: 
+                About : 
             </span>
-            <button type="button">Me</button>
-            <button type="button">My skills</button>
-            <button type="button">My work</button> 
+            <button type="button" className={menu__button}>Me</button>
+            <button type="button" className={menu__button}>My skills</button>
+            <button type="button" className={menu__button}>My work</button> 
         </div>
     )
 }

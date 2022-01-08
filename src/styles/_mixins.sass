@@ -1,0 +1,49 @@
+@import "_variables"
+  
+= flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: center, $align-items: center, $gap-x: 0, $gap-y: 0)
+  display: $display
+  flex-flow: $direction $wrap
+  justify-content: $justify-content
+  align-items: $align-items
+  gap: $gap-x $gap-y
+
+= flex($grow: 0, $shrink: 1, $basis: auto)
+  flex: $grow $shrink $basis
+
+
+= reset-list
+  margin: 0
+  padding: 0
+  list-style: none
+
+= header
+  font-family: $header-font
+  font-size: $header-size
+  font-weight: 700
+  color: $green
+  text-shadow: 4px 4px 0px $blue, 7px 7px 0px $red
+  text-align: left
+  padding: 50px 0px 50px 50px 
+
+= text ( $padding: 40px)
+  font-weight: 700
+  font-size: $text-header-size
+  text-align: left
+  padding: $padding 0px $padding $padding 
+
+= text-background($border-left:50px, $border-right: 0, $left: 0, $height: 100px)
+  content: ""
+  position: absolute
+  top:50%
+  left: $left
+  transform: translate(0, -50% )
+  width: 100vw
+  height: $height
+  background-color: $light-gray
+  border-top-left-radius: $border-left
+  border-bottom-left-radius: $border-left
+  border-top-right-radius: $border-right
+  border-bottom-right-radius: $border-right
+  z-index: -1
+  
+  

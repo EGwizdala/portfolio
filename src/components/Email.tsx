@@ -9,11 +9,11 @@ interface EmailProps {
 
  function Email(props:EmailProps) {
     return (
-    <div >
+    <>
         <label className="form-element" htmlFor="email">
             <input type="email" id="email" name="email" value={props.email} onChange = {props.change} placeholder="Email" required></input>
         </label>
-    </div>
+    </>
     )
 }
 

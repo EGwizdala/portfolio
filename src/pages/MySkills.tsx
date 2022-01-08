@@ -3,7 +3,7 @@ import { ReactComponent as SVGHtml } from '../svg/html.svg';
 import { ReactComponent as SVGCss } from '../svg/css.svg';
 import { ReactComponent as SVGJavaScript } from '../svg/javascript.svg';
 import { ReactComponent as SVGReact } from '../svg/react.svg';
-
+import '../styles/MySkills.sass'
 
 
 
@@ -19,21 +19,21 @@ function MySkills() {
     })
     
     return (
-        <section>
-            <h2>/ About my skills</h2>
-            <h4>Technologies I work with:</h4>
-            <div>
+        <section className= "section--skills">
+            <h2 className= "section--skills__header">/ About my skills</h2>
+            <h3 className = "section--skills__text">Technologies I work with:</h3>
+            <div className = "section--skills__icons">
                 <SVGHtml />
                 <SVGCss />
                 <SVGJavaScript />
                 <SVGReact />
-                <div>Html5</div>
-                <div>Css3</div>
-                <div>JavaScript</div>
-                <div>React</div>
+                <caption>Html5</caption>
+                <caption>Css3</caption>
+                <caption>JavaScript</caption>
+                <caption>React</caption>
             </div>
-            <h4>I also use:</h4>
-            <ul>{technologiesDisplay}</ul>
+            <h3 className = "section--skills__text">I also use:</h3>
+            <ul className = "section--skills__technologies">{technologiesDisplay}</ul>
         </section>
     )
 }

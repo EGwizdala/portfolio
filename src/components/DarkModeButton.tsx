@@ -1,12 +1,16 @@
 import React from 'react'
 
-function DarkModeButton() {
+interface DarkModeProps {
+    className: string
+}
+
+function DarkModeButton(props:DarkModeProps) {
     return (
-        <div>
-            <button type="button">
+        <div className={props.className}>
+            <button type="button" className="btn-dark-mode">
                Onn/off
             </button>
-            <span> Dark mode</span>
+            <span className="text-dark-mode"> Dark mode</span>
         </div>
     )
 }

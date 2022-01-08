@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../components/Image'
-import images from '../json/images.json'
+import images from '../data/images.json'
 
 
 function Gallery() {

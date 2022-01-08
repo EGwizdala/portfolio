@@ -4,6 +4,7 @@ import Section from '../components/Section'
 import { ReactComponent as SVGCode } from '../svg/code.svg';
 import { ReactComponent as SVGDesign } from '../svg/design.svg'
 import { ReactComponent as SVGDevelope } from '../svg/develope.svg';
+import '../styles/MyWork.sass'
 
 
 function MyWork() {
@@ -24,21 +25,21 @@ function MyWork() {
             key: 3,
         }
     ];
-
+    
     const sectionsDisplay = sections.map(section => {
         return (
-            <Section key={section.key} icon={section.icon} text={section.text}/>
+            <Section key={section.key} icon={section.icon} text={section.text} classNameIcon={"icon"}/>
        )
     })
 
     return (
-        <div>
-            <h2>/ About my work</h2>
-            <h4>Every project is made with passion!</h4>
-            <ul>{sectionsDisplay}</ul>
+        <section className = "section--myWork">
+            <h2 className="section--myWork__header">/ About my work</h2>
+            <h3 className = "section--myWork__text">Every project is made with passion!</h3>
+            <ul className= "section--myWork__group">{sectionsDisplay}</ul>
             <h4>Some of my projects:</h4>
             <Gallery />
-        </div>
+        </section>
     )
 }
 

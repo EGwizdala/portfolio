@@ -2,17 +2,22 @@ import { ReactComponent as PersonSVG } from '../svg/person.svg';
 
 interface NameProps {
     name: string;
-    change: any;
+    onChange: (e: React.FormEvent<EventTarget>) => void
+      
 }
 
 const Name = (props: NameProps) => {
     return (
-    <div>
+    <>
         <label className="form-element" htmlFor="name">
-            <input type="text" id="name" name="name" value={props.name} onChange = {props.change} placeholder="Name" required></input>
+            <input type="text" id="name" name="name" value={props.name} onChange = {props.onChange} placeholder="Name" required></input>
         </label>
-      </div>
+      </>
     )
 }
 
 export default Name
+
+//props change na onchache
+
+//NameProps e:React.FormEvent<HTMLInputElement>
