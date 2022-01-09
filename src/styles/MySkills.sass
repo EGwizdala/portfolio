@@ -22,18 +22,18 @@
     &__icons
         +flex-parent
         width: 100%
-        height: map-get($icon-size, mediumSize) * 2
+        height: map-get($icon-size, smallSize) * 2
         position: relative
         svg
             +flex(1, 0, 25%)
-            height: map-get($icon-size, mediumSize)
-            width: map-get($icon-size, mediumSize)
+            height: map-get($icon-size, smallSize)
+            width: map-get($icon-size, smallSize)
             align-self: flex-end
         caption
             +flex(1, 0, 25%)
             font-size: $icon-text-size
     &__technologies
-        width: 100%
+        width: 80%
         font-size: $text-secondary-size
         +flex-parent(flex, row, wrap, space-evenly, center, 10px, 10px)
         li  

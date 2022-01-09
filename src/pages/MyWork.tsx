@@ -8,7 +8,7 @@ import '../styles/MyWork.sass'
 
 
 function MyWork() {
-    const sections: {icon: JSX.Element, text:string, key: number}[]  = [
+    const articles: {icon: JSX.Element, text:string, key: number}[]  = [
         {   
             icon: <SVGCode />,
             text: "I always try to look for the best solutions. Each project is giving me new skills and tools to build faster and cleaner code.  ",
@@ -26,9 +26,9 @@ function MyWork() {
         }
     ];
     
-    const sectionsDisplay = sections.map(section => {
+    const sectionsDisplay = articles.map(article => {
         return (
-            <Section key={section.key} icon={section.icon} text={section.text} classNameIcon={"icon"}/>
+            <Section key={article.key} icon={article.icon} text={article.text} classNameIcon={"iconDiv"}/>
        )
     })
 
@@ -36,8 +36,8 @@ function MyWork() {
         <section className = "section--myWork">
             <h2 className="section--myWork__header">/ About my work</h2>
             <h3 className = "section--myWork__text">Every project is made with passion!</h3>
-            <ul className= "section--myWork__group">{sectionsDisplay}</ul>
-            <h4>Some of my projects:</h4>
+            <ul className= "section--myWork__articles">{sectionsDisplay}</ul>
+            <h3 className = "section--myWork__text">Some of my projects:</h3>
             <Gallery />
         </section>
     )
