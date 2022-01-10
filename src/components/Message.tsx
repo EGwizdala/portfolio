@@ -5,11 +5,9 @@ interface MessageProps {
 
 export const Message = (props:MessageProps) => {
     return (
-    <div className="message" >
-        <label htmlFor="message">
+        <label className="form-element" htmlFor="message">
             <textarea id="message" name="message" value={props.message} onChange = {props.onChange}placeholder = "Send us an message?"></textarea>
         </label>
-      </div>
     )
 }
 

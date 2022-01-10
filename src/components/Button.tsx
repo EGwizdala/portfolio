@@ -9,7 +9,7 @@ const Button = (props:ButtonProps) => {
 
     return (
         <button onClick={props.buttonSubmit}>
-         "Wyślij !"
+         Wyślij !
         </button>
     )
 }

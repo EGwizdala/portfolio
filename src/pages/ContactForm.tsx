@@ -5,8 +5,8 @@ import Message from '../components/Message';
 import Button from '../components/Button'
 
 
-interface ContactFormProps {
-
+type ContactFormProps= {
+    className: string
 }
 interface ContactFormState{
     email: string;
@@ -21,11 +21,11 @@ interface UsernameFormElement extends HTMLFormElement {
     readonly elements: FormElements
 }
 
-class ContactForm extends Component {
+class ContactForm extends Component<ContactFormProps> {
         state: ContactFormState = {
-            email: "sss",
-            name: "sss",
-            message: "sss"
+            email: "",
+            name: "",
+            message: ""
         }
 
     handleOnChange = (e: React.FormEvent<EventTarget>): void => {
@@ -52,7 +52,7 @@ class ContactForm extends Component {
     
     render() {
         return (
-            <form>
+            <form className={this.props.className}>
                 <Email email={this.state.email} change={this.handleOnChange}/>
                 <Name name={this.state.name} onChange={this.handleOnChange}/>
                 <Message message={this.state.message} onChange={this.handleOnChange}/>

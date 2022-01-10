@@ -1,4 +1,6 @@
 import React from 'react';
+import { ReactComponent as Visibility } from '../svg/visibility.svg';
+import { ReactComponent as GithubPages} from '../svg/github.svg';
 
 interface ImageProps {
     picture: string;
@@ -9,13 +11,19 @@ interface ImageProps {
 
 function Image(props: ImageProps) {
     return (
-        <>
-            <img src={`images/${props.picture}.${props.fileType}`} alt={`${props.alt}`} />
-            <div>
-                <h4>{props.alt}</h4>
-                
+        <div className="gallery--card">
+            <div className="gallery--card__background--image" style={{ backgroundImage: `url(/images/${props.picture}.${props.fileType})` }} >
             </div>
-        </>
+            <div className = "gallery--card__content">
+                <h4>{props.alt}</h4>
+                < Visibility />
+                < GithubPages />
+            </div>
+            
+        </div>
+            
+            
+            
     )
 }
 

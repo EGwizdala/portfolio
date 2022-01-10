@@ -14,7 +14,7 @@ function Gallery() {
         )
     })
     return (
-        <div>
+        <div className = "gallery">
             {gallery}
         </div>
     );

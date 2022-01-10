@@ -11,7 +11,7 @@ const ContatData = (props: ContatDataProps) => {
     return (
         <li>
             {props.icon}
-            <div>{props.data}</div>
+            <p>{props.data}</p>
         </li>
      );
 }

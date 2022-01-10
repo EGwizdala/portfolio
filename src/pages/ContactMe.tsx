@@ -5,6 +5,7 @@ import { ReactComponent as SVGMail } from '../svg/mail.svg';
 import { ReactComponent as SVGGithub } from '../svg/github.svg';
 import { ReactComponent as SVGLinkedIn } from '../svg/linkedin.svg';
 import ContactForm from './ContactForm'
+import '../styles/ContactMe.sass'
 
 
 
@@ -36,12 +37,12 @@ const ContactMe = () => {
        )
     })
     return (
-        <div>
-            <h2>/ Contact me</h2>
-            <p>I am looking for a full-time or part-time job, so if you are interested in getting to know me a little more, please contact me or use the form.</p>
-            <ul>{contacts}</ul>
-            <ContactForm />
-        </div>
+        <section className = "section--contact">
+            <h2 className = "section--contact__header">/ Contact me</h2>
+            <p className = "section--contact__text--secondary"> I am looking for a full-time or part-time job, so if you are interested in getting to know me a little more, please contact me or use the form.</p>
+            <ul className = "section--contact__contact--data">{contacts}</ul>
+            <ContactForm  className ="section--contact__contact--data"/>
+        </section>
      );
 }
  

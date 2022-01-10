@@ -16,16 +16,17 @@
   padding: 0
   list-style: none
 
+
 = header
   font-family: $header-font
   font-size: $header-size
   font-weight: 700
   color: $green
-  text-shadow: 4px 4px 0px $blue, 7px 7px 0px $red
+  text-shadow: $text-shadow
   text-align: left
-  padding: 50px 0px 50px 50px 
+  padding: 120px 0px 60px 50px 
 
-= text ( $padding: 40px)
+= text ( $padding: 50px)
   font-weight: 700
   font-size: $text-header-size
   text-align: left
@@ -46,4 +47,8 @@
   border-bottom-right-radius: $border-right
   z-index: -1
   
-  
+= text-secondary
+  line-height: 1.5
+  font-size: $text-secondary-size
+  text-align: justify 
+  letter-spacing: 0.5px
