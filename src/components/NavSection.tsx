@@ -12,7 +12,8 @@ function NavSection(props: NavSectionProps) {
             <span>
                 About : 
             </span>
-            <button type="button" className={menu__button}>Me</button>
+            {/* how about links to anchors */}
+            <button type="button" className={menu__button}>Me</button> 
             <button type="button" className={menu__button}>My skills</button>
             <button type="button" className={menu__button}>My work</button> 
         </div>

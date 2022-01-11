@@ -1,4 +1,6 @@
+// unused import
 import { ReactComponent as PersonSVG } from '../svg/person.svg';
+
 
 interface NameProps {
     name: string;
@@ -6,6 +8,7 @@ interface NameProps {
       
 }
 
+// how about generic Input component 
 const Name = (props: NameProps) => {
     return (
     <>
@@ -17,6 +20,8 @@ const Name = (props: NameProps) => {
 }
 
 export default Name
+
+//redundant comments
 
 //props change na onchache
 

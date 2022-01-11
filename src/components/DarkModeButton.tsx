@@ -8,6 +8,7 @@ function DarkModeButton(props:DarkModeProps) {
     return (
         <div className={props.className}>
             <button type="button" className="btn-dark-mode">
+                {/* typo onn -> on */}
                Onn/off
             </button>
             <span className="text-dark-mode"> Dark mode</span>

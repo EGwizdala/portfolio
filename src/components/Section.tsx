@@ -6,6 +6,7 @@ interface SectionProps {
     classNameIcon: string;
 }
 
+//SectionWithIcon?
 function Section(props: SectionProps) {
     return (
         <>

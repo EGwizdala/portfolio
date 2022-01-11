@@ -6,7 +6,7 @@ interface EmailProps {
     email: string;
     change: (e: any) => void;
 }
-
+// how about generic Input component 
  function Email(props:EmailProps) {
     return (
     <>

@@ -6,7 +6,7 @@ interface ContatDataProps {
     data: string;
 
 }
- 
+ //generic naming, not related to Contact. How about ListItemWithIcon or can be rendered as content of ListWithIcons
 const ContatData = (props: ContatDataProps) => {
     return (
         <li>

@@ -22,6 +22,7 @@ function MySkills() {
         <section className= "section--skills">
             <h2 className= "section--skills__header">/ About my skills</h2>
             <h3 className = "section--skills__text">Technologies I work with:</h3>
+            {/* could be extracted to another component */}
             <div className = "section--skills__icons">
                 <SVGHtml />
                 <SVGCss />

@@ -52,3 +52,46 @@
   font-size: $text-secondary-size
   text-align: justify 
   letter-spacing: 0.5px
+
+
+//   @function translate-media-condition($c) {
+//   $conditions: ("screen": "only screen",
+//   "print": "only print",
+//   "retina": "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 120dpi)",
+// );
+
+//   @each $name,
+//     $value in $v-breakpoint {
+//     $_current-condition: (">#{$name}": "(min-width: #{$value + 1})",
+//     "<#{$name}": "(max-width: #{$value})",
+//   );
+//     $conditions: map-merge($conditions, $_current-condition);
+//   }
+
+//   @return map-get($conditions, $c);
+// }
+
+// @mixin media($args...) {
+//   $query: "";
+
+//   @each $arg in $args {
+//     $op: "";
+
+//     @if ($query !="") {
+//       $op: " and ";
+//     }
+
+//     $query: $query+$op+translate-media-condition($arg);
+//   }
+
+//   @media #{$query} {
+//     @content;
+//   }
+// }
+
+// usage:   @include media(">md") {...}
+
+// use for:
+// 1. top navigation
+// 2. (about me) IllustrationWithText / Depiction
+// 3. contact form

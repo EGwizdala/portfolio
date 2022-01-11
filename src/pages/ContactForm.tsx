@@ -56,7 +56,7 @@ class ContactForm extends Component<ContactFormProps> {
                 <Email email={this.state.email} change={this.handleOnChange}/>
                 <Name name={this.state.name} onChange={this.handleOnChange}/>
                 <Message message={this.state.message} onChange={this.handleOnChange}/>
-                <Button buttonSubmit={this.handleSubmit}/>
+                <Button buttonSubmit={this.handleSubmit}>Send</Button>
             </form>
         )
     }

@@ -3,6 +3,7 @@ interface MessageProps {
     onChange: (e: React.FormEvent<EventTarget>) => void
 }
 
+// could be replaced by Input component (if it accepted tagName prop or renderAsTextarea flag)
 export const Message = (props:MessageProps) => {
     return (
         <label className="form-element" htmlFor="message">

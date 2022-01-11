@@ -7,7 +7,7 @@ import useImage from 'use-image';
 const src = "https://www.freeiconspng.com/uploads/heart-png-15.png";
 
 
-
+//Resize: https://thewebdev.info/2021/03/01/how-to-resize-html5-canvas-to-fit-the-window/
 function Canvas() {
 
   
