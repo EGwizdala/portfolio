@@ -2,31 +2,45 @@
     {
         "picture": "unicorn",
         "fileType": "jpg",
-        "alt": "travelers blog website"
+        "alt": "travelers blog website",
+        "projectLink": "https://egwizdala.github.io/UNICORN/",
+        "githubLink": "https://github.com/EGwizdala/UNICORN"
     },
     {   "picture": "words-game",
         "fileType": "png",
-        "alt": "game for kids"
+        "alt": "game for kids",
+        "projectLink": "https://egwizdala.github.io/WORDS_GAME/",
+        "githubLink": "https://github.com/EGwizdala/WORDS_GAME"
     },
     {   "picture": "weather-app",
         "fileType": "jpg",
-        "alt": "weather forecast app"
+        "alt": "weather forecast app",
+        "projectLink": "https://egwizdala.github.io/Weather-App/",
+        "githubLink": "https://github.com/EGwizdala/Weather-App"
     },
     {   "picture": "form",
         "fileType": "png",
-        "alt": "travelers blog website"
+        "alt": "form in react",
+        "projectLink": "https://formbyreact.herokuapp.com/",
+        "githubLink": "https://github.com/EGwizdala/React-Form"
     },
     {   "picture": "architect-website",
         "fileType": "png",
-        "alt": "website of architectural studio"
+        "alt": "website of architectural studio",
+        "projectLink": "https://egwizdala.github.io/A-Plus-Projekt-/",
+        "githubLink": "https://github.com/EGwizdala/A-Plus-Projekt-"
     },
     {   "picture": "mybrary",
         "fileType": "jpg",
-        "alt": "book online library"
+        "alt": "book online library",
+        "projectLink": "https://egwizdala.github.io/UNICORN/",
+        "githubLink": "https://github.com/EGwizdala/MyLibrary"
     },
     {   "picture": "winter-triathlon",
         "fileType": "png",
-        "alt": "winter triathlon website"
+        "alt": "winter triathlon website",
+        "projectLink": "https://egwizdala.github.io/Zimowy-Triathlon-R3D/",
+        "githubLink": "https://github.com/EGwizdala/Zimowy-Triathlon-R3D"
     }
 
 ]

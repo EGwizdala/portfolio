@@ -1,0 +1,14 @@
+@import "../../styles/_variables"
+@import "../../styles/_mixins"
+
+
+.btn
+    cursor: pointer
+    transition: all 0.3s linear
+    +flex-parent
+    & > *
+        +flex
+    span
+        padding: map-get($padding, nav-element)
+
+   

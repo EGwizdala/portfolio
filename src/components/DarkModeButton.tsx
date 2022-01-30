@@ -4,9 +4,9 @@ interface DarkModeProps {
     className: string
 }
 
-function DarkModeButton(props:DarkModeProps) {
+const DarkModeButton: React.FC<DarkModeProps> = ({className}) => {
     return (
-        <div className={props.className}>
+        <div className={className}>
             <button type="button" className="btn-dark-mode">
                Onn/off
             </button>

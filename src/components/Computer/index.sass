@@ -1,0 +1,75 @@
+@import "../../styles/_variables"
+@import "../../styles/_mixins"
+
+
+.computer
+    width: inherit
+    +flex-parent($display: flex, $direction: column, $wrap: nowrap, $justify-content: center, $align-items: center, $gap-x: 0, $gap-y: 0)
+    &__monitor
+        +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: center, $align-items: center, $gap-x: 0, $gap-y: 0)
+        height: 450px
+        width: $monitor-width
+        max-width: $monitor-max-width
+        border-top: 11px solid $dark-gray
+        border-left: 11px solid $dark-gray
+        border-right: 11px solid $dark-gray
+        border-top-left-radius: 50px
+        border-top-right-radius: 50px
+        & > *
+            +flex(1,0,100%)
+            padding: 0 20px 
+    &__header
+        text-shadow: $text-shadow
+        font-family: $header-font
+        font-size: 80px
+        font-weight: bolder
+        color: $green
+        letter-spacing: 6px
+        word-spacing: 10px
+    &__subtitle
+        +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: center, $align-items: center, $gap-x: 0, $gap-y: 0)
+        font-family: $main-font
+        font-size: $text-header-size
+        font-weight: bold
+        letter-spacing: 2px
+        word-spacing: 5px
+        line-height: calc(#{$text-header-size + 10px })
+        & > *
+    &__base
+        height: 100px
+        width: $base-width
+        max-width: $base-max-width
+        border: 11px solid $dark-gray
+        border-radius: 50px
+        position: relative
+.tag
+    text-align: left  
+.tag:last-child
+    text-align: right  
+.heart
+    height: 40px
+    width: 40px
+    fill: $red
+    transition: all 0.3s linear 
+    &:hover
+        fill: $green
+        transform: scale(1.1)
+.play
+    height: 50px
+    width: 50px
+    fill: $dark-gray
+    position: absolute
+    border-radius: 50%
+    left: 10%
+    bottom: 50%
+    transform: translateY(50%)
+    transition: all 0.3s linear 
+    cursor: pointer
+    &:hover
+        fill: $pumpkin
+    &:active
+        transform: scale(0.95) translateY(50%)  
+      
+.blink
+    display: inline-block
+    width: 10px

@@ -1,12 +1,10 @@
-import React from 'react';
-import Nav from './Nav';
+import Nav from './Nav/Nav';
 import Main from './Main';
-import Footer from './Footer';
-import '../styles/App.sass'
+import Footer from './Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div style = {{textAlign: "center"}}>
       <Nav />
       <Main />
       <Footer />

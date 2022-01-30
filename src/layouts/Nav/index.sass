@@ -1,0 +1,93 @@
+@import "../../styles/_mixins"
+@import "../../styles/_variables"
+    
+.navigation
+    +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: space-between,$align-items: center, $gap-x: 0, $gap-y: 0)
+    height: 70px
+    width: $screen-width
+    text-transform: uppercase
+    &__element
+        font-size: 0.8rem
+        letter-spacing: 0.15em
+        +flex-parent(flex, row, no-wrap,center, center, 0, 10px)  
+    &__element--btn
+        position: relative
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: -5px
+            display: block
+            border-radius: 15px
+            background: rgba($pumpkin,.2)
+            width: 30px
+            height: 30px
+            transition: all .2s ease
+        &:hover
+            color: $white
+            &:before
+                width: calc(100% + 15px)
+                background: rgba($pumpkin,0.5)
+            svg
+                fill: $white
+                transform: rotate(180deg)
+        &-text
+            z-index: 1  
+            font-size: 0.8rem
+            letter-spacing: 0.15em
+            padding: map-get($padding, nav-element)
+            padding-left: 10px
+        svg 
+            z-index: 1 
+            height: 30px
+            width: 30px
+            fill: $dark-gray
+            transition: all 0.3s linear 0s
+        &:active
+            transform: scale(1.04)       
+    &__element--menu 
+        padding: map-get($padding, nav-element)
+        position: relative
+        cursor: pointer
+        transition: all 0.3s ease 0s
+        &:last-child, &:first-child
+            border-right: none
+        &::before
+            position: absolute
+            content: ""
+            height: 100%
+            width: 100%
+            transform: translateX(5px)
+            left: 0
+            top: 0
+            border-right: 1.5px solid $dark-gray
+        &::after
+            bottom: -3px
+            content: ""
+            display: block
+            height: 3px
+            border-radius: 1.5px
+            left: 50%
+            position: absolute
+            background:  rgba($pumpkin,0.2)
+            transition: width 0.3s ease 0s, left 0.3s ease 0s
+            width: 0
+        &:hover::after
+            background:  rgba($pumpkin,0.5)
+            width: 100%
+            left: 0
+// .btn-dark-mode
+//     background-color: $dark-gray
+//     height: 25px
+//     width: auto
+//     padding: map-get($padding, nav-element)
+//     border-radius: 9px
+//     color: $white
+
+// .text-dark-mode
+//     padding: map-get($padding, nav-element)
+       
+
+
+
+

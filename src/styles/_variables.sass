@@ -5,7 +5,6 @@ $main-font: 'Public Sans', sans-serif
 $font-size: 10px
 $header-size: #{$font-size * 4} 
 $text-header-size: #{$font-size * 2.5} 
-
 $text-secondary-size: #{$font-size * 1.8} 
 $icon-text-size: #{$font-size * 2.3} 
 
@@ -14,8 +13,15 @@ $red: #f00
 $blue: #00f
 $dark-gray:#464646
 $light-gray: #ebebeb
-$white: #fff
+$white: #ededf4
+$pumpkin: #F3752B
 
+$linear-backround: repeating-linear-gradient(45deg, $light-gray, $light-gray 5px, rgba($pumpkin,0.5) 5px, rgba($pumpkin,0.5) 10px)
+
+$monitor-width: 70%
+$base-width: 90%
+$monitor-max-width: 700px
+$base-max-width: calc(#{$monitor-max-width * ($base-width / $monitor-width)}) 
 
 $text-shadow: 4px 4px 0px $blue, 7px 7px 0px $red
 

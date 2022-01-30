@@ -1,0 +1,47 @@
+@import "../../styles/_variables"
+@import "../../styles/_mixins"
+
+.section-contact
+    +flex-parent(flex, row, wrap, center, center, 0, 30px)
+    margin-bottom: 70px
+    &__header
+        +flex(1, 0, 100%)
+        +header
+    &__text
+        +flex(1, 0, 100%)
+        +text-secondary
+        padding: 0 5% 50px 5%
+    &__data 
+        +flex(1, 0, 45%)
+        +flex-parent(flex, row, wrap, center, center, 20px, 0)
+        min-width: 360px
+        max-width: 450px
+    &__form
+        +flex(1, 0, 45%)
+        min-width: 360px
+        max-width: 450px
+        +flex-parent(flex, row, wrap, center, center, 10px, 0)
+
+.data
+    +flex(0, 0, 30%)
+    width: 100%
+    svg
+        height: map-get($icon-size, verySmallSize)
+        width: map-get($icon-size, verySmallSize)
+    &__text
+        +flex(0, 0, 70%)
+        justify-content: flex-start
+        +text-secondary
+  
+        
+   
+
+        
+
+
+    
+
+            
+
+
+        
