@@ -2,11 +2,17 @@
 @import "../../styles/_variables"
     
 .footer
+    width: $screen-width
+    +tablet
+        width: 100vw
+    +mobile
+        width: 100vw
     +flex-parent
     height: 70px
     font-size: 1rem
     text-transform: uppercase
     color: $navy-blue
+    background-color: $pumpkin
 
     
    

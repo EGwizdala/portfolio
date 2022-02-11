@@ -10,16 +10,14 @@ import {ReactComponent as Description} from '../../svg/description.svg'
 
 import './index.sass';
 
-type Any = any | undefined;
+type Number = number;
 const AboutMe = () => {
     const elRef = useRef<HTMLDivElement>(null);
-    const [topOffset, setTopOffset] = useState<Any>(0);
+    const [topOffset, setTopOffset] = useState<Number>(0);
     const className = "section";
-    let counter = 1;
     const { 
         isScrollingUp,
         isScrollingDown,
-        scrollDirection,
       } = useScrollDirection()
     useEffect(() => {
         AOS.init({ duration: 100 });
@@ -29,25 +27,23 @@ const AboutMe = () => {
     }, [])
     
     const listenToScroll = () => {
-        const windowHeight = window.innerHeight;
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        let elData: any = elRef.current?.getBoundingClientRect();
-        const positonY = elData?.top + elData?.height;
+        // const windowHeight = window.innerHeight;
+        // const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        // let elData: any = elRef.current?.getBoundingClientRect();
         
         // console.log(elRef.current?.getBoundingClientRect(), winScroll, windowHeight, positonY );
         // setTopOffset(positonY)
-        if (isScrollingUp) {
-            console.log("up")
-            counter++;
-            setTopOffset(topOffset + counter);
+        // if (isScrollingUp) {
+        //     console.log("up")
+        //     counter++;
+        //     setTopOffset(topOffset + counter);
               
-        } else if (isScrollingDown) {
-            console.log("down")
-            counter--;
-            // setTopOffset(topOffset - counter);
-        } 
+        // } else if (isScrollingDown) {
+        //     console.log("down")
+        //     counter--;
+        // } 
        
-        console.log(counter)
+    
     };
    
     

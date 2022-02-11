@@ -4,6 +4,11 @@
 .navigation
     +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: space-between,$align-items: center, $gap-x: 0, $gap-y: 0)
     height: 70px
+    width: $screen-width
+    +tablet
+        width: 100vw
+    +mobile
+        width: 100vw
     +tablet
         margin: 0 50px
     +mobile

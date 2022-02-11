@@ -3,8 +3,13 @@
 
 .section-skills
     +flex-parent
-    width: 100%
-    overflow: hidden
+    width: $screen-width
+    +tablet
+        width: 100vw
+        overflow: hidden
+    +mobile
+        width: 100vw
+        overflow: hidden
     &__header
         +flex(1,0,100%)
         +header
@@ -43,7 +48,7 @@
         font-weight: bolder
         +flex-parent(flex, row, wrap, space-evenly, center, 10px, 50px)
         +mobile
-            margin: 30px 50px
+            margin: 50px 70px
         li  
             padding: map-get($padding, technologies )
            
@@ -76,7 +81,7 @@
             transform: translateY(0)
     &__text
         +flex(0, 0, 25%)
-        +text()
+        +text(0)
         +mobile
             position: relative
             padding: 0

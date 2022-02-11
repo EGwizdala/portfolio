@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,7 +12,6 @@ import { ReactComponent as SVGDesign } from '../../svg/design.svg'
 import { ReactComponent as SVGDevelope } from '../../svg/develope.svg';
 import './index.sass';
 
-type Any = any | undefined;
 function MyWork() {
    ;
     const articles: {icon: JSX.Element, text:string, key: number}[]  = [

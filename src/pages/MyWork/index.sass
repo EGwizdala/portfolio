@@ -4,8 +4,13 @@
 
 .section-myWork
     +flex-parent
-    width: 100%
-    overflow: hidden
+    width: $screen-width
+    +tablet
+        width: 100vw
+        overflow: hidden
+    +mobile
+        width: 100vw
+        overflow: hidden
     &__header
         +flex(1,0,100%)
         +header
