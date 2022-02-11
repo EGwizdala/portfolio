@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = ({value, change, className, inputType, place
         value={value}
         onChange={change}
         onFocus={(e) => e.target.placeholder = ""} 
-        onBlur={(e) => e.target.placeholder = "Name"}
+        onBlur={(e) => e.target.placeholder = `${placeholder}`}
         placeholder={placeholder}
         required></input>
     const textarea = <textarea
@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = ({value, change, className, inputType, place
         value={value}
         onChange={change}
         onFocus={(e) => e.target.placeholder = ""} 
-        onBlur={(e) => e.target.placeholder = "Name"}
+        onBlur={(e) => e.target.placeholder = `${placeholder}`}
         placeholder={placeholder}
         required></textarea>
     

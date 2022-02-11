@@ -10,16 +10,26 @@
     grid-template-areas: "header header" "icon text" "icon text--secondary" "icon text--secondary" "icon text--secondary" "icon text--secondary"  "btn-contact btn-resume"
     justify-items: center
     align-items: center
+    +mobile
+        grid-template-columns: 1fr
+        grid-template-areas: "header" "icon" "text" "text--secondary"  "btn-contact" "btn-resume"
+        grid-row-gap: 50px
    
     &__header
         grid-area: header
         place-self: center start
         +header
+
     &__icon
         grid-area: icon
         height: map-get($icon-size, bigSize)+5px
         width: map-get($icon-size, bigSize)+5px
         position: relative
+        top:0
+        left:0
+        +mobile
+            height: map-get($icon-size, bigMobileSize)
+            width: map-get($icon-size, bigMobileSize)
         svg
             position: absolute
             top:0
@@ -27,10 +37,13 @@
             height: map-get($icon-size, bigSize)
             width: map-get($icon-size, bigSize)
             z-index: -1
-        &::before
+            +mobile
+                height: map-get($icon-size, bigMobileSize)
+                width: map-get($icon-size, bigMobileSize)
+        &--background
             position: absolute
-            top:0px
-            left:0px
+            top:0
+            left:0
             transform: translate(-50px, 50px)
             content: ""
             width: map-get($icon-size, bigSize)
@@ -39,31 +52,47 @@
             background-color: $light-gray
             border-radius: 50%
             z-index: -2
-        &::after
+            +mobile
+                height: map-get($icon-size, bigMobileSize)
+                width: map-get($icon-size, bigMobileSize)
+        &--frame
             position: absolute
-            top:0px
-            left:0px
+            top:0
+            left:0
             content: ""
             width: map-get($icon-size, bigSize)
             height: map-get($icon-size, bigSize)
             border: 5px solid
             z-index: 1
+            +mobile
+                height: map-get($icon-size, bigMobileSize)
+                width: map-get($icon-size, bigMobileSize)
     &__text
         grid-area: text
+        color: $navy-blue
         font-weight: 700
         font-size: $text-header-size
         text-align: justify
         place-self: start center
+        +tablet
+            padding-right: 50px
+        +mobile
+            margin: 0 50px
         
     &__text--secondary
         grid-area: text--secondary
         place-self: start center
         +text-secondary
-
+        +tablet
+            padding-right: 50px
+        +mobile
+            margin: 0 50px
     .aboutMe--btn
         height: 200px
         font-size: $icon-text-size
         position: relative
+        +mobile
+            height: auto
         &:before
             content: ""
             position: absolute
@@ -72,17 +101,17 @@
             left: -5px
             display: block
             border-radius: 30px
-            background: rgba($pumpkin,.2)
+            background: $pumpkin
             width: 60px
             height: 60px
             transition: all .2s ease
-        &:hover
-            color: $white
+        &:hover, &:active
+            color: $navy-blue
             &:before
                 width: calc(100% + 15px)
-                background: rgba($pumpkin,0.5)
+                background: $pumpkin
             svg
-                fill: $white
+                fill: $navy-blue
                 transform: rotate(180deg)
         &-text
             z-index: 1  

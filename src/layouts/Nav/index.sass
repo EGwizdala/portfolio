@@ -4,12 +4,20 @@
 .navigation
     +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: space-between,$align-items: center, $gap-x: 0, $gap-y: 0)
     height: 70px
-    width: $screen-width
+    +tablet
+        margin: 0 50px
+    +mobile
+        margin: 15px 40px
     text-transform: uppercase
     &__element
         font-size: 0.8rem
         letter-spacing: 0.15em
-        +flex-parent(flex, row, no-wrap,center, center, 0, 10px)  
+        +flex-parent(flex, row, no-wrap,center, center, 0, 10px)
+        +mobile
+            letter-spacing: 0
+    a
+        +mobile
+            order:2
     &__element--btn
         position: relative
         &:before
@@ -19,17 +27,17 @@
             left: -5px
             display: block
             border-radius: 15px
-            background: rgba($pumpkin,.2)
+            background: $pumpkin
             width: 30px
             height: 30px
             transition: all .2s ease
-        &:hover
-            color: $white
+        &:hover, &:active
+            color: $navy-blue
             &:before
                 width: calc(100% + 15px)
-                background: rgba($pumpkin,0.5)
+                background: $pumpkin
             svg
-                fill: $white
+                fill: $navy-blue
                 transform: rotate(180deg)
         &-text
             z-index: 1  
@@ -69,11 +77,11 @@
             border-radius: 1.5px
             left: 50%
             position: absolute
-            background:  rgba($pumpkin,0.2)
+            background:  $wisteria
             transition: width 0.3s ease 0s, left 0.3s ease 0s
             width: 0
         &:hover::after
-            background:  rgba($pumpkin,0.5)
+            background:  $wisteria
             width: 100%
             left: 0
 // .btn-dark-mode

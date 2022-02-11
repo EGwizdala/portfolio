@@ -2,14 +2,16 @@
 @import "../../styles/_mixins"
 
 
+
 .form-element
     width: 300px
     margin: 0 0 20px 0
+
     &__input,  &__textarea
         width: 100%
         height: 40px
         font-size: $text-secondary-size
-        background-color: $light-gray
+        background-color: $pumpkin
         border-radius: 20px
         padding-left: 20px 
         text-align: left
@@ -19,7 +21,7 @@
             font-size: $text-secondary-size
             text-align: left
         &:focus
-            background-color: rgb($pumpkin,0.5)
+            background-color: $wisteria
             color: $white
     &__textarea
         height: 120px
@@ -29,15 +31,16 @@
         min-width: 150px
         max-width: 250px
         border-radius: 20px
-        background-color: $dark-gray
+        background-color: $purple-plum
         font-size: $text-secondary-size
         color: $white
         height: 40px
         justify-content: space-evenly
         &:hover
-            color: $dark-gray
-            background-color: rgba($pumpkin,0.5)
-            fill: $dark-gray
+            background-color: $navy-blue
+            svg
+                transform: rotate(360deg)
+
         &-text
             z-index: 1  
             letter-spacing: 0.15em
@@ -49,9 +52,7 @@
             width: 30px
             fill: $white
             transition: all 0.3s linear 0s
-            &:hover
-                fill: $dark-gray
-                transform: rotate(360deg)
+                
         &:active
             transform: scale(1.04)   
 

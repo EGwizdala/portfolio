@@ -4,6 +4,8 @@
 
 .section-myWork
     +flex-parent
+    width: 100%
+    overflow: hidden
     &__header
         +flex(1,0,100%)
         +header
@@ -11,12 +13,22 @@
         +flex(1,0,100%)
         +text
         position: relative
+        +tablet
+            margin-left: 100px
+        +mobile
+            margin-left: 50px
+            &:first-of-type
+                display: none
         &::before
             +text-background
         &:last-of-type
             margin: 40px 0
             &::before
                 +text-background(0, 50px, -$text-margin, 100px)
+                +tablet
+                    +text-background(0, 50px, -50px, 100px)
+                +mobile
+                    +text-background(0, 50px, -50px, 50px)
     &__articles
         +flex-parent(flex, row, wrap, center, center, 50px, 0)
         width: 80%
@@ -25,7 +37,10 @@
             +flex(1, 0, 30%)
             position: relative
             order: 4
- 
+            +tablet
+                order: 3
+            +mobile
+                order: 3
             &:first-of-type
                 order: 1
             &:last-of-type
@@ -33,7 +48,7 @@
             &::before
                 position: absolute
                 content: ""
-                background-color: #fde3d5
+                background: $linear-backround
                 height: map-get($icon-size, mediumSize)
                 width: map-get($icon-size, mediumSize)
                 border-radius: 50%
@@ -48,9 +63,14 @@
                 width: 50%
                 +text-secondary
                 order: 3
+                +tablet
+                    order: 4
+                +mobile
+                    order: 4
                 padding: 0 30px
                 &:first-of-type
                     order: 2
                 &:last-of-type
                     order: 6
-
+            
+                

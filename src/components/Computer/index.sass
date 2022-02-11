@@ -15,6 +15,10 @@
         border-right: 11px solid $dark-gray
         border-top-left-radius: 50px
         border-top-right-radius: 50px
+        +mobile
+            border: 5px solid $dark-gray
+            border-radius: 50px
+            +flex-parent($display: flex, $direction: column, $wrap: wrap, $justify-content: center, $align-items: center, $gap-x: 0, $gap-y: 0)
         & > *
             +flex(1,0,100%)
             padding: 0 20px 
@@ -26,6 +30,9 @@
         color: $green
         letter-spacing: 6px
         word-spacing: 10px
+        +mobile
+            font-size: 50px
+            +flex(2,0,20%)
     &__subtitle
         +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: center, $align-items: center, $gap-x: 0, $gap-y: 0)
         font-family: $main-font
@@ -34,7 +41,11 @@
         letter-spacing: 2px
         word-spacing: 5px
         line-height: calc(#{$text-header-size + 10px })
-        & > *
+        +mobile
+            font-size: $text-secondary-size
+            +flex(0,0,20%)
+            display: inline
+            
     &__base
         height: 100px
         width: $base-width
@@ -42,18 +53,16 @@
         border: 11px solid $dark-gray
         border-radius: 50px
         position: relative
+        +mobile
+            border: none
+            height: 50px
 .tag
-    text-align: left  
+    text-align: left
+    +mobile
+        +flex(1,0,5%)
+        width: 100%
 .tag:last-child
     text-align: right  
-.heart
-    height: 40px
-    width: 40px
-    fill: $red
-    transition: all 0.3s linear 
-    &:hover
-        fill: $green
-        transform: scale(1.1)
 .play
     height: 50px
     width: 50px
@@ -65,6 +74,9 @@
     transform: translateY(50%)
     transition: all 0.3s linear 
     cursor: pointer
+    +mobile
+        left: 20%
+        bottom: 190%
     &:hover
         fill: $pumpkin
     &:active

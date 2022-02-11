@@ -12,6 +12,7 @@
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "animate.css": "^4.1.1",
+    "aos": "^3.0.0-beta.6",
     "gh-pages": "^3.2.3",
     "hover.css": "^2.3.2",
     "konva": "^8.3.2",
@@ -20,6 +21,7 @@
     "react-dom": "^17.0.2",
     "react-konva": "^17.0.2-5",
     "react-scripts": "5.0.0",
+    "react-use-scroll-direction": "^0.1.0",
     "sass": "^1.45.2",
     "typescript": "^4.5.4",
     "use-image": "^1.0.8",
@@ -52,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/react-animate-on-scroll": "^2.1.5",
     "install-peers": "^1.0.3"
   }

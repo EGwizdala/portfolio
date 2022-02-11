@@ -3,11 +3,14 @@
 
 .gallery
     +flex-parent(flex, row, wrap, center, center, 40px, 40px)
+    +tablet
+        margin: 0 50px
+        grid-gap: 20px
 .gallery-card
-    min-width: 200px
+    min-width: 250px
     max-width: 300px
     height: 350px
-    background-color: $light-gray
+    background-color: $white
     +flex(1, 0, 30%)
     position: relative
     transition: all 0.3s linear 0s
@@ -15,7 +18,7 @@
         min-width: inherit
         max-width: inherit
         height: inherit
-        background-image: #cccccc
+        background-image: $pumpkin
         background-position: top
         background-repeat: no-repeat
         background-size: cover
@@ -29,26 +32,35 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-        +flex-parent(flex, column, wrap, center, center, 0, 0)  
+        +flex-parent(flex, column, wrap, center, center, 20px, 0)  
+        .content-icon-text 
+            +flex(2, 0, 30%)
+            +flex-parent
+            font-size: $text-secondary-size
+            font-weight: bold  
+            transition: all 0.3s linear 0s
+            color: $navy-blue
         .content-text 
             +flex(2, 0, 30%)
             +flex-parent
             font-size: $text-header-size
             font-weight: bold
+            
         svg, #githubIcon
             +flex(1, 0, 20%)
             width: map-get($icon-size, verySmallSize)
             fill: $dark-gray
             cursor: pointer
             transition: all 0.3s linear 0s
-            &:hover
-                fill: $pumpkin            
+            &:hover 
+                fill: $navy-blue 
+            
     &:hover
         transform: scale(1.05)
-        background-color: rgb( $pumpkin, 0.1 )
+        background-color: $pumpkin
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15)
         .content-text 
-            color: $pumpkin
+            color: $navy-blue
        
              
        

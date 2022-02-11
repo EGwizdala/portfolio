@@ -1,4 +1,6 @@
-import React, { ReactFragment } from 'react';
+import { ReactFragment, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import SectionWithIcon from '../../components/SectionWithIcon'
 
@@ -10,6 +12,7 @@ import './index.sass'
 
 
 function MySkills() {
+    const className = 'section-skills';
 
     const mainTechnologies: {icon: ReactFragment, text: string}[] = [
         { icon: <SVGHtml />, text: "Html5" },
@@ -29,7 +32,13 @@ function MySkills() {
         return <li key={`tech${key}`}>{element}</li>
     });
     
-    const className = 'section-skills'
+    
+
+    useEffect(() => {
+        AOS.init({ duration: 100 });
+        
+     
+    }, [])
 
     return (
         <section className= {className} id= "mySkills">
@@ -37,17 +46,33 @@ function MySkills() {
                 className={`${className}__header`}>
                 / About my skills</h2>
             <h3
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
                 className={`${className}__text`}>
                 Technologies I work with:</h3>
             <div
+                data-aos="fade"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
                 className={`${className}__icons`}>
                 {mainTechnologiesDisplay}
             </div>
             <h3
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
                 className={`${className}__text`}>
                 I also use:
             </h3>
             <ul
+                data-aos="new-animation"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
                 className={`${className}__technologies`}>
                 {technologiesDisplay}
             </ul>

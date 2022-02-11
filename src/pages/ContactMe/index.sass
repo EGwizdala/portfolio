@@ -1,5 +1,6 @@
 @import "../../styles/_variables"
 @import "../../styles/_mixins"
+@import "../../styles/_keyframes"
 
 .section-contact
     +flex-parent(flex, row, wrap, center, center, 0, 30px)
@@ -11,29 +12,73 @@
         +flex(1, 0, 100%)
         +text-secondary
         padding: 0 5% 50px 5%
+        +mobile
+            padding: 0 50px 50px 50px
     &__data 
         +flex(1, 0, 45%)
-        +flex-parent(flex, row, wrap, center, center, 20px, 0)
+        +flex-parent(flex, column, wrap, space-between, center, 20px, 0)
         min-width: 360px
         max-width: 450px
+        
     &__form
         +flex(1, 0, 45%)
         min-width: 360px
         max-width: 450px
         +flex-parent(flex, row, wrap, center, center, 10px, 0)
+        +mobile
+            display: none
 
-.data
-    +flex(0, 0, 30%)
+.data-container
+    +flex-parent(flex, row, wrap, flex-start, center, 10px, 20px)
+    +flex(1, 0, 25%)
     width: 100%
+    padding-left: 50px 
+    cursor: pointer
+    +mobile
+        +flex-parent(flex, row, wrap, center, center, 10px, 20px)
+        padding: 0 50px 
+    &:hover
+        .data
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both
+            transform: translate3d(0, 0, 0)
+        .data__text
+            text-decoration: underline
+    &:active
+        .data
+            svg
+                fill:$wisteria
+                .color
+                    fill:$wisteria
+        .data__text
+            text-decoration: underline
+            color: $wisteria
+         
+.data
+    +flex(0, 0, 10%)
+    +mobile
+        +flex(0, 0, 100%)
     svg
+        fill: $navy-blue
         height: map-get($icon-size, verySmallSize)
         width: map-get($icon-size, verySmallSize)
+        .color
+            fill: $navy-blue
     &__text
-        +flex(0, 0, 70%)
+        max-width: 250px
+        +flex(1, 0, 70%)
         justify-content: flex-start
         +text-secondary
-  
+        font-weight: bolder
+        color: $navy-blue
+        +mobile
+            +flex-parent
+        a
+            word-wrap: break-word
         
+  
+
+
+
    
 
         

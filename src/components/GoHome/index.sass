@@ -1,0 +1,26 @@
+@import "../../styles/_mixins"
+@import "../../styles/_variables"
+@import "../../styles/_keyframes"    
+.goHome 
+    position: fixed
+    bottom: 5%
+    right: 5%
+    width: 40px
+    height: 40px
+    border: 3px solid $purple-plum
+    border-radius: 50%
+    +flex-parent
+    transition: all .2s ease
+    cursor: pointer
+    svg
+        transform: scale(2)
+        fill: $purple-plum
+        transition: all .2s ease
+    &:hover
+        animation: moveUpDown 2s linear infinite
+        border: 3px solid $navy-blue
+        svg
+            .path
+                fill: $navy-blue
+               
+     

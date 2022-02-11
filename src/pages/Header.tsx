@@ -3,7 +3,7 @@ import Computer from '../components/Computer/Computer'
 
 function Header() {
     return (
-        <header>
+        <header id = "header">
             {<Computer />}
         </header>
     )
