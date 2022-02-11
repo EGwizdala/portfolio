@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.67a9ab3f.css",
-    "main.js": "/portfolio/static/js/main.bbe4b017.js",
+    "main.css": "/portfolio/static/css/main.6a39f5d6.css",
+    "main.js": "/portfolio/static/js/main.1e586b61.js",
     "static/js/787.9b9c0edf.chunk.js": "/portfolio/static/js/787.9b9c0edf.chunk.js",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.6c57b1cc10b4bb529ca5ceb9094ecda5.svg",
     "static/media/design.svg": "/portfolio/static/media/design.82bcaad68ec48754aa3f17071e6145cd.svg",
@@ -9,21 +9,26 @@
     "static/media/react.svg": "/portfolio/static/media/react.8b65364b5dfbc73e2b6131ef7a1090c4.svg",
     "static/media/javascript.svg": "/portfolio/static/media/javascript.c1179ebab4f2919ca123207afe20af73.svg",
     "static/media/code.svg": "/portfolio/static/media/code.244efa2dce0e6c6ebe16f429b4076ebc.svg",
-    "static/media/phone.svg": "/portfolio/static/media/phone.bacbcc9e3883fd011b2cbf3f9a5ef5f1.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.a5381a7b5ea06f15aa50dcfd0debe485.svg",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.3b6235f95c28fe608967c8cdaa6760ac.svg",
-    "static/media/mail.svg": "/portfolio/static/media/mail.422c73fe278b0448addad6f679af5b8d.svg",
+    "static/media/phone.svg": "/portfolio/static/media/phone.4439ce8760c8af570b5384d5e75b8de5.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.3a87dd754445b6ea1ddaa77d2ee46f2d.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.c9a7d1f21244e51ac28705f8d90a0138.svg",
+    "static/media/mail.svg": "/portfolio/static/media/mail.cad72ca58d529d90495b94ee065ab895.svg",
+    "index.html": "/portfolio/index.html",
     "static/media/html.svg": "/portfolio/static/media/html.14e5acde1d57aefd1779cf11b11e3e50.svg",
     "static/media/css.svg": "/portfolio/static/media/css.bed9436bc80dc3b3e1feba69c045d648.svg",
-    "index.html": "/portfolio/index.html",
+    "static/media/visibility.svg": "/portfolio/static/media/visibility.b95bcd62948d627fb31fd38869560ada.svg",
+    "static/media/play.svg": "/portfolio/static/media/play.30b84adef3647eb4b1ee4871ad09dd8d.svg",
     "static/media/error.svg": "/portfolio/static/media/error.e1ff5d962f0688114327d3b957251111.svg",
     "static/media/description.svg": "/portfolio/static/media/description.4403be57147502c8134908bff6f29371.svg",
-    "main.67a9ab3f.css.map": "/portfolio/static/css/main.67a9ab3f.css.map",
-    "main.bbe4b017.js.map": "/portfolio/static/js/main.bbe4b017.js.map",
+    "static/media/send.svg": "/portfolio/static/media/send.c52670b08172cbabeaae8a5f40b4745b.svg",
+    "static/media/arrow_drop_up.svg": "/portfolio/static/media/arrow_drop_up.be72a6e8cfc798d00dfafcf99a4e895b.svg",
+    "static/media/pause.svg": "/portfolio/static/media/pause.95877413d20663b9d91a72e8bf199614.svg",
+    "main.6a39f5d6.css.map": "/portfolio/static/css/main.6a39f5d6.css.map",
+    "main.1e586b61.js.map": "/portfolio/static/js/main.1e586b61.js.map",
     "787.9b9c0edf.chunk.js.map": "/portfolio/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67a9ab3f.css",
-    "static/js/main.bbe4b017.js"
+    "static/css/main.6a39f5d6.css",
+    "static/js/main.1e586b61.js"
   ]
 }
