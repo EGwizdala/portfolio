@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from 'react'
 import ButtonWithIconLink from '../../components/ButtonWithIcon/ButtonWithIconLink';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useScrollDirection } from 'react-use-scroll-direction'
-
 import { ReactComponent as SVGAvatar } from '../../svg/avatar.svg';
 import { ReactComponent as Exclamation } from '../../svg/error.svg';
 import {ReactComponent as Description} from '../../svg/description.svg'
@@ -15,23 +13,11 @@ const AboutMe = () => {
     const elRef = useRef<HTMLDivElement>(null);
     const [topOffset, setTopOffset] = useState<Number>(0);
     const className = "section";
-    const { 
-        isScrollingUp,
-        isScrollingDown,
-    } = useScrollDirection()
-    
+
     useEffect(() => {
         AOS.init({ duration: 100 });
     }, [])
 
-    const addTopOffset = () => {
-        setTopOffset((prevValue) => prevValue + 1 )
-    }
-
-    const substractTopOffset = () => {
-        setTopOffset((prevValue) => prevValue - 1 )
-    }
-    
     
     return (
         <section
