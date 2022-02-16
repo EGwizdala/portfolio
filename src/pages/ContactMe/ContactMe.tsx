@@ -1,12 +1,13 @@
 import React from 'react';
 
 import SectionWithIcon from '../../components/SectionWithIcon';
-import ContactForm from '../ContactForm/ContactForm';
 import {Link} from '../../components/Link';
 import { ReactComponent as SVGPhone } from '../../svg/phone.svg';
 import { ReactComponent as SVGMail } from '../../svg/mail.svg';
 import { ReactComponent as SVGGithub } from '../../svg/github.svg';
 import { ReactComponent as SVGLinkedIn } from '../../svg/linkedin.svg';
+
+import img from '../../images/conact.jpg'
 
 import './index.sass';
 
@@ -60,8 +61,11 @@ const ContactMe = () => {
                 className={`${className}__data`}>
                 {contacts}
             </ul>
-            <ContactForm
-                className={`${className}__form`} />
+            <div className={`${className}__img`}>
+                <img src={img} alt="emali message" />
+                <a href="http://www.freepik.com" >Designed by slidesgo / Freepik</a>
+            </div>
+            
         </section>
      );
 }

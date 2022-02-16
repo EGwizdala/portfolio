@@ -3,6 +3,7 @@ import Main from '../Main';
 import Footer from '../Footer/Footer';
 import './App.sass'
 
+
 function App() {
   return (
     <div className = "App">

@@ -20,16 +20,16 @@ function MySkills() {
         { icon: <SVGJavaScript />, text: "JavaScript" },
         { icon: <SVGReact />, text: "React"},
     ]
-    const technologies: string[] = ["git", "npm", "TypeScript", "Express.js", "Node.js", "Ejs", "C++", "MySQL", "MongoDB", "Heroku"];
+    const technologies: string[] = ["git", "npm", "MySQL", "Sass",  "Heroku", "Express.js", "TypeScript", "Node.js", "Ejs", "ReactRouter", "C++",  "MongoDB", "Postman", "Jira", "Miro" ];
     const mainTechnologiesDisplay = mainTechnologies.map(element => {
     
         return <SectionWithIcon key={element.text} text={element.text} icon={element.icon} classNameIcon = "skill-icon"/>
     });
 
-    let key: number = 0;
     const technologiesDisplay = technologies.map(element => {
-        key++;
-        return <li key={`tech${key}`}>{element}</li>
+        return (
+            <li key={element}>{element}</li>
+        )
     });
     
     
@@ -47,31 +47,31 @@ function MySkills() {
                 / About my skills</h2>
             <h3
                 data-aos="fade-left"
-                data-aos-delay="500"
-                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-duration="500"
                 data-aos-easing="linear"
                 className={`${className}__text`}>
                 Technologies I work with:</h3>
             <div
                 data-aos="fade"
-                data-aos-delay="1000"
-                data-aos-duration="1000"
+                data-aos-delay="500"
+                data-aos-duration="500"
                 data-aos-easing="linear"
                 className={`${className}__icons`}>
                 {mainTechnologiesDisplay}
             </div>
             <h3
                 data-aos="fade-right"
-                data-aos-delay="500"
-                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-duration="500"
                 data-aos-easing="linear"
                 className={`${className}__text`}>
                 I also use:
             </h3>
             <ul
                 data-aos="new-animation"
-                data-aos-delay="1000"
-                data-aos-duration="1000"
+                data-aos-delay="500"
+                data-aos-duration="500"
                 data-aos-easing="linear"
                 className={`${className}__technologies`}>
                 {technologiesDisplay}

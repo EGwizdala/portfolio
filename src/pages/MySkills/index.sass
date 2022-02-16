@@ -35,7 +35,7 @@
         +flex-parent(flex, column, wrap, center, center, 0, 30px)
         width: 100%
         height: map-get($icon-size, smallSize) * 3
-        position: relative
+        position: relative  
         +mobile
             +flex-parent(flex, row, wrap, center, center, 100px, 0)
             height: auto
@@ -44,15 +44,22 @@
         
     &__technologies
         width: 80%
-        font-size: $text-secondary-size
-        font-weight: bolder
+        font-size: 1rem
         +flex-parent(flex, row, wrap, space-evenly, center, 10px, 50px)
         +mobile
             margin: 50px 70px
         li  
             padding: map-get($padding, technologies )
+            &:nth-child(3n+1)
+                font-weight: bolder
+                font-size: 1.5rem
+            &:nth-child(3n+2)
+                font-size: 1.3rem
+                
            
 .skill-icon
+    cursor: pointer
+    transition: all 0.5s linear
     +flex(0, 0, 60%)
     +mobile
         +flex(0, 0, 50%)
@@ -64,17 +71,18 @@
             order: 5
         &:nth-of-type(4)
             order: 8
-  
     &:hover
-        svg
-            fill: $navy-blue
-        &__text
-            color: $navy-blue
+        transform: translateY(-10px)
     svg
         bottom: 0px
         transform: translateY(50%) 
         height: map-get($icon-size, smallSize)
         width: map-get($icon-size, smallSize)
+        fill: $dark-gray
+        stroke: $dark-gray
+        path
+            fill: $dark-gray
+            stroke: $dark-gray
         +mobile
             height: map-get($icon-size, mobileSmallSize)
             width: map-get($icon-size, mobileSmallSize)

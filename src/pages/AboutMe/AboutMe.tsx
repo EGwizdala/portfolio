@@ -18,34 +18,20 @@ const AboutMe = () => {
     const { 
         isScrollingUp,
         isScrollingDown,
-      } = useScrollDirection()
+    } = useScrollDirection()
+    
     useEffect(() => {
         AOS.init({ duration: 100 });
-      window.addEventListener("scroll", listenToScroll);
-      return () => 
-         window.removeEventListener("scroll", listenToScroll); 
     }, [])
+
+    const addTopOffset = () => {
+        setTopOffset((prevValue) => prevValue + 1 )
+    }
+
+    const substractTopOffset = () => {
+        setTopOffset((prevValue) => prevValue - 1 )
+    }
     
-    const listenToScroll = () => {
-        // const windowHeight = window.innerHeight;
-        // const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        // let elData: any = elRef.current?.getBoundingClientRect();
-        
-        // console.log(elRef.current?.getBoundingClientRect(), winScroll, windowHeight, positonY );
-        // setTopOffset(positonY)
-        // if (isScrollingUp) {
-        //     console.log("up")
-        //     counter++;
-        //     setTopOffset(topOffset + counter);
-              
-        // } else if (isScrollingDown) {
-        //     console.log("down")
-        //     counter--;
-        // } 
-       
-    
-    };
-   
     
     return (
         <section
@@ -59,11 +45,12 @@ const AboutMe = () => {
                 <div style={{
                     top: `${topOffset}`
                 }}
-                    className={`${className}__icon--frame`}>{isScrollingUp && "Up"}</div>
-                <SVGAvatar style={{ 
-                    top: ` ${isScrollingUp} ? ${topOffset} : 0`
+                    className={`${className}__icon--frame`}></div>
+                <SVGAvatar
+                    style={{
+                    top:  `${topOffset}`
                 }} />
-                <div  className={`${className}__icon--background`}>{isScrollingDown && "Down"}</div>
+                <div  className={`${className}__icon--background`}></div>
             </div>
             <h3 data-aos="fade"
                 data-aos-duration="1000"
@@ -76,7 +63,7 @@ const AboutMe = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 className={`${className}__text--secondary`}>
-                CSS initiation level Allows me to build web applications for. I try to establish even alignment using shims. I use flexbox properties in my projects. I put visualized elements that are not important to the structure in pseudo-elements.
+                I am a novice frontend developer and an experienced architect. Both paths focus on the user experience, and this has always been a priority for me. Whether it's a building or a mobile application, I know that the most important thing is the satisfaction, safety and comfort of the user. Architecture gave me knowledge, a sense of aesthetics and business foundations, but frontend gave me the passion and joy of creating.
             </p>
             <ButtonWithIconLink
                 className="aboutMe"

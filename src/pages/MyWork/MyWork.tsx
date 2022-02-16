@@ -4,7 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-
 import Gallery from '../Gallery/Gallery';
 import SectionWithIcon from '../../components/SectionWithIcon'
 import { ReactComponent as SVGCode } from '../../svg/code.svg';
@@ -17,17 +16,17 @@ function MyWork() {
     const articles: {icon: JSX.Element, text:string, key: number}[]  = [
         {   
             icon: <SVGCode />,
-            text: "I always try to look for the best solutions. Each project is giving me new skills and tools to build faster and cleaner code.  ",
+            text: "I always try to look for the best solutions. Each project gives me new skills and tools to create faster and better code.",
             key: 1,
         },
         {
             icon: <SVGDesign />,
-            text: "I am a design freak. I like when things go smooth and neat with a sense of space and logic. Furthermore, I love that little details that bring the project to life.",
+            text: "User-friendly design is a must for me. I always try to create neat designs with a sense of space and logic. But I also love the little details that bring the app to life.",
             key: 2,
         },
         {
             icon: <SVGDevelope />,
-            text: "I am constantly developing and learning new technologies. Each project differs not only in context and subject matter, but also in the background. ",
+            text: "I am constantly developing and learning new technologies. Each project I have implemented differs not only in context and subject matter, but also in technical background.",
             key: 3,
         }
     ];
