@@ -21,8 +21,8 @@ const ContactMe = () => {
         },
         {
             icon: <SVGMail />,
-            data: "emilia.gwidala@gmail.com",
-            href: "mailto:emilia.gwidala@gmail.com"
+            data: "emilia.gwizdala@gmail.com",
+            href: "mailto:emilia.gwizdala@gmail.com"
         },
         {
             icon: <SVGGithub />,
