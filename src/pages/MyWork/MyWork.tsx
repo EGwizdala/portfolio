@@ -55,8 +55,8 @@ function MyWork() {
             </h2>
             <h3
                 data-aos="fade-left"
-                data-aos-delay="500"
-                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-duration="500"
                 data-aos-easing="linear"
                 className={`${className}__text`}>
                 Every project is made with passion!
@@ -68,8 +68,8 @@ function MyWork() {
             </ul>
             <h3
                 data-aos="fade-right"
-                data-aos-delay="500"
-                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-duration="500"
                 data-aos-easing="linear"
                 className={`${className}__text`}>
                 Some of my projects:

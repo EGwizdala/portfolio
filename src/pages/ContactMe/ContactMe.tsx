@@ -55,7 +55,7 @@ const ContactMe = () => {
             </h2>
             <p 
                 className={`${className}__text`}>
-                I am looking for a full-time or part-time job, so if you are interested in getting to know me a little more, please contact me or use the form.
+                I am looking for a full-time or part-time job, so if you are interested in getting to know me a little more, please contact.
             </p>
             <ul
                 className={`${className}__data`}>
