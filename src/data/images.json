@@ -6,6 +6,12 @@
         "projectLink": "https://egwizdala.github.io/UNICORN/",
         "githubLink": "https://github.com/EGwizdala/UNICORN"
     },
+    {   "picture": "tailor-after-hours",
+        "fileType": "png",
+        "alt": "e-commerce tailor website",
+        "projectLink": "https://egwizdala.github.io/tailor-after-hours/",
+        "githubLink": "https://github.com/EGwizdala/tailor-after-hours"
+    },
     {   "picture": "words-game",
         "fileType": "png",
         "alt": "game for kids",
@@ -29,12 +35,6 @@
         "alt": "website of architectural studio",
         "projectLink": "https://egwizdala.github.io/A-Plus-Projekt-/",
         "githubLink": "https://github.com/EGwizdala/A-Plus-Projekt-"
-    },
-    {   "picture": "tailor-after-hours",
-        "fileType": "png",
-        "alt": "e-commerce tailor website",
-        "projectLink": "https://egwizdala.github.io/tailor-after-hours/",
-        "githubLink": "https://github.com/EGwizdala/tailor-after-hours"
     },
     {   "picture": "winter-triathlon",
         "fileType": "png",

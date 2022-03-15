@@ -2,19 +2,25 @@
 @import "../../styles/_variables"
     
 .navigation
+    position: fixed
+    top: 0
+    left:0
+    background-color: white
     +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: space-between,$align-items: center, $gap-x: 0, $gap-y: 0)
     height: 70px
-    width: 100%
-    +tablet
-        width: 85%
-        margin: 0 50px
-    +mobile
-        width: auto
-    +tablet
-        
-    +mobile
-        margin: 15px 40px
+    width: 100vw
+    padding: 0 50px
+    z-index: 10
     text-transform: uppercase
+    +tablet
+        width: 100%
+        padding: 0 50px
+    +mobile
+        height: 90px
+        width: 100%
+        padding: 15px 40px
+        +flex-parent($display: flex, $direction: row, $wrap: wrap, $justify-content: space-between,$align-items: center, $gap-x: 20px, $gap-y: 0)
+    
     &__element
         font-size: 0.8rem
         letter-spacing: 0.15em
@@ -23,6 +29,7 @@
             letter-spacing: 0
     a
         +mobile
+            font-size: 1rem
             order:2
     &__element--btn
         position: relative
@@ -51,6 +58,8 @@
             letter-spacing: 0.15em
             padding: map-get($padding, nav-element)
             padding-left: 10px
+            +mobile
+                font-size: 1rem
         svg 
             z-index: 1 
             height: 30px
@@ -90,17 +99,7 @@
             background:  $wisteria
             width: 100%
             left: 0
-// .btn-dark-mode
-//     background-color: $dark-gray
-//     height: 25px
-//     width: auto
-//     padding: map-get($padding, nav-element)
-//     border-radius: 9px
-//     color: $white
 
-// .text-dark-mode
-//     padding: map-get($padding, nav-element)
-       
 
 
 
