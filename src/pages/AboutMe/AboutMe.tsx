@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import ButtonWithIconLink from '../../components/ButtonWithIcon/ButtonWithIconLink';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {CV_LINK} from "../../constants/constants"
 import { ReactComponent as SVGAvatar } from '../../svg/avatar.svg';
 import { ReactComponent as Exclamation } from '../../svg/error.svg';
 import {ReactComponent as Description} from '../../svg/description.svg'
@@ -60,7 +61,7 @@ const AboutMe = () => {
             <ButtonWithIconLink
                 className="aboutMe"
                 icon={<Description />}
-                link={`${process.env.PUBLIC_URL}/files/cv.pdf`}>
+                link={CV_LINK}>
                 My resume
             </ButtonWithIconLink>
         </section>
